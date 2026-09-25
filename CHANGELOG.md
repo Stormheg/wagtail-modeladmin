@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.6.0] - UNRELEASED
+
+- Nothing yet
+
 ## [2.5.0] - 2026-09-25
 
 - Add support for Wagtail 8.0, including support for [custom base page models](https://docs.wagtail.org/en/v8.0/advanced_topics/customization/custom_base_page_models.html)
