@@ -6,10 +6,6 @@ from wagtail import VERSION as WAGTAIL_VERSION
 from wagtail.models import GroupPagePermission, Page
 from wagtail.test.utils import WagtailTestUtils
 
-from wagtail_modeladmin.test.fixtures import (
-    FIXTURE_MODELADMINTEST,
-    FIXTURE_TEST_SPECIFIC,
-)
 from wagtail_modeladmin.test.models import (
     EventCategory,
 )
@@ -46,7 +42,7 @@ def get_basepage_add_permission():
 
 
 class TestIndexView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
@@ -172,7 +168,7 @@ class TestIndexView(WagtailTestUtils, TestCase):
 
 
 class TestExcludeFromExplorer(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_MODELADMINTEST]
+    fixtures = ["modeladmintest_test.json"]
 
     def setUp(self):
         self.login()
@@ -193,7 +189,7 @@ class TestExcludeFromExplorer(WagtailTestUtils, TestCase):
 
 
 class TestCreateView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
@@ -225,7 +221,7 @@ class TestCreateView(WagtailTestUtils, TestCase):
 
 
 class TestInspectView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC, FIXTURE_MODELADMINTEST]
+    fixtures = ["test_specific.json", "modeladmintest_test.json"]
 
     def setUp(self):
         self.login()
@@ -306,7 +302,7 @@ class TestInspectView(WagtailTestUtils, TestCase):
 
 
 class TestEditView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
@@ -338,7 +334,7 @@ class TestEditView(WagtailTestUtils, TestCase):
 
 
 class TestDeleteView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
@@ -359,7 +355,7 @@ class TestDeleteView(WagtailTestUtils, TestCase):
 
 
 class TestChooseParentView(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
@@ -428,7 +424,7 @@ class TestChooseParentView(WagtailTestUtils, TestCase):
 
 
 class TestChooseParentViewForNonSuperuser(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         homepage = Page.objects.get(url_path="/home/")
@@ -480,7 +476,7 @@ class TestChooseParentViewForNonSuperuser(WagtailTestUtils, TestCase):
 
 
 class TestEditorAccess(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         # Create a user
@@ -495,7 +491,7 @@ class TestEditorAccess(WagtailTestUtils, TestCase):
 
 
 class TestModeratorAccess(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         # Create a user
@@ -513,7 +509,7 @@ class TestModeratorAccess(WagtailTestUtils, TestCase):
 
 
 class TestSearch(WagtailTestUtils, TestCase):
-    fixtures = [FIXTURE_TEST_SPECIFIC]
+    fixtures = ["test_specific.json"]
 
     def setUp(self):
         self.login()
