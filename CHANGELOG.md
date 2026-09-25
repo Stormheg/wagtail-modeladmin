@@ -5,9 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.5.0] - UNRELEASED
+## [2.5.0] - 2026-09-25
 
-- Nothing yet
+- Add support for Wagtail 8.0, including support for [custom base page models](https://docs.wagtail.org/en/v8.0/advanced_topics/customization/custom_base_page_models.html)
+- Add support for Django 6.1
+- Drop official support for Wagtail 7.3 since it is no longer maintained
 
 ## [2.4.0] - 2026-06-07
 
