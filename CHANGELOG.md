@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.6.0] - UNRELEASED
 
+- Add official support for Python 3.15
 - Drop support for Wagtail 7.0 LTS since it is no longer maintained
 - Drop support for Python 3.10
 
