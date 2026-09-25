@@ -36,6 +36,13 @@ from wagtail_modeladmin.test.models import (
 )
 from wagtail_modeladmin.test.wagtail_hooks import BookModelAdmin, EventsAdminGroup
 
+if WAGTAIL_VERSION >= (8, 0):
+    import swapper
+
+    Page = swapper.load_model("wagtailcore", "Page")
+else:
+    from wagtail.models import Page
+
 
 class TestBookIndexView(WagtailTestUtils, TestCase):
     fixtures = ["modeladmintest_test.json"]

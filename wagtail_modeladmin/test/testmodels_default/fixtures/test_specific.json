@@ -78,7 +78,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 3,
-      "content_type": ["modeladmintest", "eventindex"],
+      "content_type": ["modeladmintest_pages", "eventindex"],
       "path": "000100010001",
       "locale": 1,
       "url_path": "/home/events/",
@@ -87,7 +87,7 @@
   },
   {
     "pk": 3,
-    "model": "modeladmintest.eventindex",
+    "model": "modeladmintest_pages.eventindex",
     "fields": {
       "intro": "Look at our lovely events."
     }
@@ -103,7 +103,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 4,
-      "content_type": ["modeladmintest", "eventpage"],
+      "content_type": ["modeladmintest_pages", "eventpage"],
       "path": "0001000100010001",
       "url_path": "/home/events/christmas/",
       "slug": "christmas",
@@ -113,7 +113,7 @@
   },
   {
     "pk": 4,
-    "model": "modeladmintest.eventpage",
+    "model": "modeladmintest_pages.eventpage",
     "fields": {
       "date_from": "2014-12-25",
       "audience": "public",
@@ -146,7 +146,7 @@
       "show_in_menus": true,
       "live": false,
       "depth": 4,
-      "content_type": ["modeladmintest", "eventpage"],
+      "content_type": ["modeladmintest_pages", "eventpage"],
       "path": "0001000100010002",
       "url_path": "/home/events/tentative-unpublished-event/",
       "slug": "tentative-unpublished-event",
@@ -156,7 +156,7 @@
   },
   {
     "pk": 5,
-    "model": "modeladmintest.eventpage",
+    "model": "modeladmintest_pages.eventpage",
     "fields": {
       "date_from": "2015-07-04",
       "audience": "public",
@@ -176,7 +176,7 @@
       "show_in_menus": true,
       "live": false,
       "depth": 4,
-      "content_type": ["modeladmintest", "eventpage"],
+      "content_type": ["modeladmintest_pages", "eventpage"],
       "path": "0001000100010003",
       "url_path": "/home/events/someone-elses-event/",
       "slug": "someone-elses-event",
@@ -186,7 +186,7 @@
   },
   {
     "pk": 6,
-    "model": "modeladmintest.eventpage",
+    "model": "modeladmintest_pages.eventpage",
     "fields": {
       "date_from": "2015-07-04",
       "audience": "private",
@@ -206,7 +206,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 3,
-      "content_type": ["modeladmintest", "simplepage"],
+      "content_type": ["modeladmintest_pages", "simplepage"],
       "path": "000100010002",
       "url_path": "/home/about-us/",
       "locale": 1,
@@ -215,7 +215,7 @@
   },
   {
     "pk": 7,
-    "model": "modeladmintest.simplepage",
+    "model": "modeladmintest_pages.simplepage",
     "fields": {
       "content": "<p>We are really good.</p>"
     }
@@ -231,7 +231,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 3,
-      "content_type": ["modeladmintest", "simplepage"],
+      "content_type": ["modeladmintest_pages", "simplepage"],
       "path": "000100010005",
       "url_path": "/home/other/",
       "locale": 1,
@@ -240,7 +240,7 @@
   },
   {
     "pk": 11,
-    "model": "modeladmintest.simplepage",
+    "model": "modeladmintest_pages.simplepage",
     "fields": {
       "content": "<p>Other events</p>"
     }
@@ -256,7 +256,7 @@
       "show_in_menus": false,
       "live": true,
       "depth": 4,
-      "content_type": ["modeladmintest", "eventpage"],
+      "content_type": ["modeladmintest_pages", "eventpage"],
       "path": "0001000100050001",
       "url_path": "/home/other/special-event/",
       "locale": 1,
@@ -265,7 +265,7 @@
   },
   {
     "pk": 12,
-    "model": "modeladmintest.eventpage",
+    "model": "modeladmintest_pages.eventpage",
     "fields": {
       "date_from": "2015-07-04",
       "audience": "public",

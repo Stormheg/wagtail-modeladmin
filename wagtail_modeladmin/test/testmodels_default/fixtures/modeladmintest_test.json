@@ -181,7 +181,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 3,
-      "content_type": ["modeladmintest", "eventindex"],
+      "content_type": ["modeladmintest_pages", "eventindex"],
       "path": "000100010001",
       "locale": 1,
       "url_path": "/home/events/",
@@ -190,7 +190,7 @@
   },
   {
     "pk": 3,
-    "model": "modeladmintest.eventindex",
+    "model": "modeladmintest_pages.eventindex",
     "fields": {
       "intro": "Look at our lovely events."
     }
@@ -206,7 +206,7 @@
       "show_in_menus": true,
       "live": true,
       "depth": 4,
-      "content_type": ["modeladmintest", "eventpage"],
+      "content_type": ["modeladmintest_pages", "eventpage"],
       "path": "0001000100010001",
       "url_path": "/home/events/christmas/",
       "locale": 1,
@@ -215,7 +215,7 @@
   },
   {
     "pk": 4,
-    "model": "modeladmintest.eventpage",
+    "model": "modeladmintest_pages.eventpage",
     "fields": {
       "date_from": "2014-12-25",
       "audience": "public",
@@ -235,7 +235,7 @@
       "live": true,
       "depth": 5,
       "locale": 1,
-      "content_type": ["modeladmintest", "venuepage"],
+      "content_type": ["modeladmintest_pages", "venuepage"],
       "path": "00010001000100010001",
       "url_path": "/home/events/christmas/santas-grotto/",
       "slug": "santas-grotto"
@@ -243,7 +243,7 @@
   },
   {
     "pk": 5,
-    "model": "modeladmintest.venuepage",
+    "model": "modeladmintest_pages.venuepage",
     "fields": {
       "address": "The North Pole",
       "capacity": 3
@@ -260,7 +260,7 @@
       "live": true,
       "locale": 1,
       "depth": 5,
-      "content_type": ["modeladmintest", "venuepage"],
+      "content_type": ["modeladmintest_pages", "venuepage"],
       "path": "00010001000100010002",
       "url_path": "/home/events/christmas/santas-workshop/",
       "slug": "santas-workshop"
@@ -268,7 +268,7 @@
   },
   {
     "pk": 6,
-    "model": "modeladmintest.venuepage",
+    "model": "modeladmintest_pages.venuepage",
     "fields": {
       "address": "The North Pole",
       "capacity": 25
